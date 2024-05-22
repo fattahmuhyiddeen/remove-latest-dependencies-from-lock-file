@@ -1,6 +1,6 @@
 {
   "name": "remove-latest-dependencies-from-lock-file",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Remove versions from package-lock.json for dependencies that use latest version",
   "main": "index.js",
   "scripts": {

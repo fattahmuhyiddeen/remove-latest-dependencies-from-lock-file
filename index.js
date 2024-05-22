@@ -3,6 +3,11 @@ const fs = require('fs');
 
 const read = (filename) => fs.readFileSync(filename, { encoding: 'utf8', flag: 'r' });
 
+fs.writeFile('test.txt', 'Hello content!', function (err) {
+  if (err) throw err;
+  console.log('Saved!');
+});
+
 try {
   const { dependencies } = JSON.parse(read('../package.json'));
   const lockFile = JSON.parse(read('../package-lock.json'));
