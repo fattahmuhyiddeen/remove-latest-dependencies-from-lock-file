@@ -1,0 +1,14 @@
+{
+  "name": "remove-latest-dependencies-from-lock-file",
+  "version": "1.0.0",
+  "description": "Remove versions from package-lock.json for dependencies that use latest version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm publish --access=public",
+    "postinstall": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
