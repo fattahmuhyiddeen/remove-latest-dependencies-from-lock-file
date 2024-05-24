@@ -7,3 +7,10 @@ Just include this library in your `devDependecies` list.
 ```
 npm i -D remove-latest-dependencies-from-lock-file
 ```
+
+then run 
+```
+node node_modules/remove-latest-dependencies-from-lock-file
+```
+
+in your project's postinstall script
