@@ -1,10 +1,10 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require("fs");
 
-const read = (filename) =>
-  fs.readFileSync(filename, { encoding: "utf8", flag: "r" });
-
 try {
+  const read = (filename) =>
+    fs.readFileSync(filename, { encoding: "utf8", flag: "r" });
+
   const { dependencies, devDependencies } = JSON.parse(read("package.json"));
   const lockFile = JSON.parse(read("package-lock.json"));
   for (const key in dependencies) {
